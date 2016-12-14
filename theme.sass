@@ -1,0 +1,30 @@
+$font-std: 'Roboto', sans-serif
+$font-emph: 'Josefin Sans', sans-serif
+
+body
+  font: 100% $font-std
+  background-image: url("res/bg.png")
+
+.emph
+  font: 110% $font-emph
+
+.title
+  @extend .emph
+  font-size: 300%
+  text-align: center
+  color: white
+
+#tron
+  width: 80%
+  height: 200px
+  position: relative
+  overflow: hidden
+  left: 10%
+
+.bg-vid
+  width: 100%
+  height: 100%
+  z-index: -1
+  position: absolute
+  top: -200px
+  left: -200px
