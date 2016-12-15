@@ -1,30 +1,55 @@
 $font-std: 'Roboto', sans-serif
-$font-emph: 'Josefin Sans', sans-serif
+$font-emph:'Aref Ruqaa', serif
 
 body
   font: 100% $font-std
   background-image: url("res/bg.png")
 
+.text-pane
+  width: 80%
+  border: 2px solid white
+  border-radius: 5px
+  margin-left: 10%
+  p
+    font: 125% $font-std
+    color: grey
+    margin: 30px
+    text-indent: 2em
+  .quote
+    @extend p
+    font-style: italic
+    margin-left: 50px
+  h1
+    font: 300% $font-emph
+    text-align: center
+    color: grey
+  img
+    margin: 30px
+
 .emph
   font: 110% $font-emph
 
-.title
+.h1Title
   @extend .emph
-  font-size: 300%
+  font-size: 400%
   text-align: center
   color: white
 
-#tron
-  width: 80%
-  height: 200px
+.title
+  @extend .h1Title
+  font-size: 150%
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+  position: absolute
+
+.tron
+  width: 70%
   position: relative
   overflow: hidden
-  left: 10%
+  left: 15%
+  margin: 5px
 
 .bg-vid
   width: 100%
   height: 100%
   z-index: -1
   position: absolute
-  top: -200px
-  left: -200px
